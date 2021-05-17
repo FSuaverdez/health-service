@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/mobile.css">
+  <script src="faqs.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="header">
+    <h2>CompHub Services</h2>
+  </div>
+  <%- include('../partials/navlinks'); -%>
+
+
+    <div class="container">
+      <div>
+        <img src="../images/FAQS.jpg" alt="TechSupport" class="center">
+      </div>
+
+      <div id="faq-view">
+        <div id="faqs">
+          <button class="dropbtn pshort" onclick="showContentSoftware()">Software</button>
+          <div id="dropList" class="content">
+            <p id="questions" class="accordion">1. My account details is incorrect on my personal information. How can I
+              update this?</p>
+            <div class="panel">
+              <p id="answers">• We are happy to make this one time change for you. Please submit your request here
+                including your correct information and we will update it within 48 hours.</p>
+            </div>
+            <p id="questions" class="accordion">2. Why can't I sign in to my Comphub account?</p>
+            <div class="panel">
+              <p id="answers">• You may have a different Username, email address or even multiple accounts. For further
+                assistance kindly contact our page.</p>
+            </div>
+            <p id="questions" class="accordion">3. How can I activate my windows OS? </p>
+            <div class="panel">
+              <p id="answers">• To activate the windows OS, you need to buy a product key or activation license. </p>
+              <p id="answers">Click Here:<a
+                  href="https://support.microsoft.com/en-us/windows/activate-windows-10-11305dbc-ef5d-1c08-3ba7-4c7a2cb8f404#:~:text=To%20activate%20Windows%2010%2C%20you,10%20should%20be%20activated%20automatically."
+                  target="_blank">https://support.microsoft.com</a></p>
+            </div>
+          </div>
+
+          <button class="dropbtn" onclick="showContentHardware()">Hardware & Warranty</button>
+          <div id="dropList1" class="content">
+            <p id="questions" class="accordion">1. How long is the warranty for the hardware? </p>
+            <div class="panel">
+              <p id="answers">• It has a 1-year warranty for hardware and software products.</p>
+            </div>
+            <p id="questions" class="accordion">2. If a product is not performing as well as it should be, can it be
+              returned/replaced?</p>
+            <div class="panel">
+              <p id="answers">• We recommend going to one of our branches for us to be able to formally test the
+                product's performance.</p>
+            </div>
+            <p id="questions" class="accordion">3. I accidentally broke the tempered glass on my pc, does it still being
+              covered by the warranty? </p>
+            <div class="panel">
+              <p id="answers">• Nope. The warranty only covers defects i.e. not working properly. Any physical damages on
+                the product isn't covered by the warranty. </p>
+            </div>
+            <p id="questions" class="accordion">4. Can we still use the warranty even without the warranty ticket? </p>
+            <div class="panel">
+              <p id="answers">• Yes but it will take a long time and a lot of process for it to be accepted. </p>
+            </div>
+            <p id="questions" class="accordion">5. Is my PC being stolen or lost included in the warranty? </p>
+            <div class="panel">
+              <p id="answers">• Unfortunately, we only accept PCs that have defects. Lost computers are not included in
+                the warranty. </p>
+            </div>
+            <p id="questions" class="accordion">6. Can I seek assistance to other repair services?</p>
+            <div class="panel">
+              <p id="answers">• Yes you can but the warranty will be voided.</p>
+            </div>
+          </div>
+
+          <button class="dropbtn btn1 pshort" onclick="showContentDelivery()">Delivery</button>
+          <div id="dropList2" class="content">
+            <p id="questions" class="accordion">1. If there are damaged products that were delivered, does this still
+              cover the warranty? </p>
+            <div class="panel">
+              <p id="answers">• If you receive any damaged products, please contact us immediately so that we can issue a
+                replacement for the item.</p>
+            </div>
+            <p id="questions" class="accordion">2. What do I do if I never received my order? </p>
+            <div class="panel">
+              <p id="answers">• Kindly contact our page in order to track your delivery status</p>
+            </div>
+            <p id="questions" class="accordion">3. What will I do if I receive the wrong product? </p>
+            <div class="panel">
+              <p id="answers">• If that is the case, please kindly contact our page for assistance.</p>
+            </div>
+            <p id="questions" class="accordion">4. How long is the delivery time?</p>
+            <div class="panel">
+              <p id="answers">• It would normally take 3-5 days but it can extend due to the availability of the products
+                and the volume of ordered products</p>
+            </div>
+            <p id="questions" class="accordion">5. The delivery person mishandled my package, what should I do?</p>
+            <div class="panel">
+              <p id="answers">• Please contact us immediately with the delivery details specifically the delivery ID, the
+                name of the delivery person or his ID number.</p>
+            </div>
+          </div>
+
+          <button class="dropbtn pshort" onclick="showContentOthers()">Others</button>
+          <div id="dropList3" class="content">
+            <p id="questions" class="accordion">1. Do you offer non technology related services? </p>
+            <div class="panel">
+              <p id="answers">• No, we prioritize computer related services only</p>
+            </div>
+            <p id="questions" class="accordion">2. How can I comment or give feedback about an experience I had in the
+              customer service? </p>
+            <div class="panel">
+              <p id="answers">• We always welcome your feedback about our service experience – whether you found it
+                friendly and helpful, or it fell short of your expectations.</p>
+            </div>
+            <p id="questions" class="accordion">3. Is there a return policy?</p>
+            <div class="panel">
+              <p id="answers">• There is no return policy. The product can only be replaced/renewed using the warranty if
+                it is broken. </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+    <!--D2 nakalagay footer-->
+    <%- include('../partials/footer'); -%>
+    
+
+</body>
+<script>
+  function showContentSoftware() {
+    document.getElementById("dropList").classList.toggle("show");
+    document.getElementById("dropList1").classList.remove("show");
+    document.getElementById("dropList2").classList.remove("show");
+    document.getElementById("dropList3").classList.remove("show");
+  }
+  function showContentHardware() {
+    document.getElementById("dropList1").classList.toggle("show");
+    document.getElementById("dropList").classList.remove("show");
+    document.getElementById("dropList2").classList.remove("show");
+    document.getElementById("dropList3").classList.remove("show");
+
+  }
+  function showContentDelivery() {
+    document.getElementById("dropList2").classList.toggle("show");
+    document.getElementById("dropList1").classList.remove("show");
+    document.getElementById("dropList").classList.remove("show");
+    document.getElementById("dropList3").classList.remove("show");
+
+  }
+  function showContentOthers() {
+    document.getElementById("dropList3").classList.toggle("show");
+    document.getElementById("dropList1").classList.remove("show");
+    document.getElementById("dropList2").classList.remove("show");
+    document.getElementById("dropList").classList.remove("show");
+
+  }
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+
+
+
+</script>
+
+</html>

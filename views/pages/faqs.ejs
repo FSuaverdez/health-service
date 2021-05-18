@@ -13,7 +13,7 @@
 
 <body>
   <div id="header">
-    <h2>CompHub Services</h2>
+    <h2>Web Clinic</h2>
   </div>
   <%- include('../partials/navlinks'); -%>
 
@@ -25,105 +25,117 @@
 
       <div id="faq-view">
         <div id="faqs">
-          <button class="dropbtn pshort" onclick="showContentSoftware()">Software</button>
+          <button class="dropbtn pshort" onclick="showContentPrevention()">Prevention</button>
           <div id="dropList" class="content">
-            <p id="questions" class="accordion">1. My account details is incorrect on my personal information. How can I
-              update this?</p>
+            <p id="questions" class="accordion">1. What is the proper way of washing hands to avoid COVID-19 transmission?</p>
             <div class="panel">
-              <p id="answers">• We are happy to make this one time change for you. Please submit your request here
-                including your correct information and we will update it within 48 hours.</p>
+              <p id="answers">• Use warm water and soap and rub your hands for at least 20 seconds. Work the lather to your wrists, between your fingers, and under your fingernails. 
+                You can also use an antibacterial and antiviral soap. Use hand sanitizer when you cannot wash your hands properly. Rewash your hands several times a day, especially after touching anything, including your phone or laptop.</p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">2. Why can't I sign in to my Comphub account?</p>
+            <p id="questions" class="accordion">2. What is the best way to avoid COVID-19 transmission?</p>
             <div class="panel">
-              <p id="answers">• You may have a different Username, email address or even multiple accounts. For further
-                assistance kindly contact our page.</p>
+              <p id="answers">• Staying at home is the best way to avoid CoVid-19. Staying at home can assure yout that you will not have the disease unless 1 of your housemate already have the virus, 
+                but still it is the best way of protecting yourself from the virus because you will be away from a 
+                lot of people that we do not know if they are already infected or not.</p>
+                <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">3. How can I activate my windows OS? </p>
+            <p id="questions" class="accordion">3. Can face masks help slow the spread of the coronavirus (SARS-CoV-2) that causes COVID-19? </p>
             <div class="panel">
-              <p id="answers">• To activate the windows OS, you need to buy a product key or activation license. </p>
-              <p id="answers">Click Here:<a
-                  href="https://support.microsoft.com/en-us/windows/activate-windows-10-11305dbc-ef5d-1c08-3ba7-4c7a2cb8f404#:~:text=To%20activate%20Windows%2010%2C%20you,10%20should%20be%20activated%20automatically."
-                  target="_blank">https://support.microsoft.com</a></p>
+              <p id="answers">• Yes, face masks combined with other preventive measures, such as frequent hand-washing and social distancing, help slow the spread of the virus. </p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">CDC.gov</a></p>
+            </div>
+            <p id="questions" class="accordion">4. What is Social or Physical Distancing?</p>
+            <div class="panel">
+              <p id="answers">• Social distancing, also called "physical distancing," means keeping a safe space between yourself and other people who are not from your household. To practice social or physical distancing, stay at least 6 feet (about 2 arms'length) 
+                from other people who are not from your household in both indoor and outdoor spaces.</p>
+                <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">CDC.gov</a></p>
             </div>
           </div>
 
-          <button class="dropbtn" onclick="showContentHardware()">Hardware & Warranty</button>
+          <button class="dropbtn pshort" onclick="showContentSymptoms()">Symptoms</button>
           <div id="dropList1" class="content">
-            <p id="questions" class="accordion">1. How long is the warranty for the hardware? </p>
+            <p id="questions" class="accordion">1. What are the common symptoms of Corona Virus Disease 2019? </p>
             <div class="panel">
-              <p id="answers">• It has a 1-year warranty for hardware and software products.</p>
+              <p id="answers">• The most common symptoms of COVID-19 are fever,Dry cough, and sore throat.</p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">2. If a product is not performing as well as it should be, can it be
-              returned/replaced?</p>
+            <p id="questions" class="accordion">2. When will the symptoms of COVID-19 will likely appear? </p>
             <div class="panel">
-              <p id="answers">• We recommend going to one of our branches for us to be able to formally test the
-                product's performance.</p>
+              <p id="answers">• Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">3. I accidentally broke the tempered glass on my pc, does it still being
-              covered by the warranty? </p>
+            <p id="questions" class="accordion">3. If I have cough or fever, does that mean that I am already infected of the virus? </p>
             <div class="panel">
-              <p id="answers">• Nope. The warranty only covers defects i.e. not working properly. Any physical damages on
-                the product isn't covered by the warranty. </p>
+              <p id="answers">• Having cough or fever does not necessarily mean that you already have COVID-19 but If you have any doubts or questions, 
+                it's best to call your doctor. An illness that seems like a fever can turn out to be flu or COVID-19.</p>
+                <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">4. Can we still use the warranty even without the warranty ticket? </p>
-            <div class="panel">
-              <p id="answers">• Yes but it will take a long time and a lot of process for it to be accepted. </p>
-            </div>
-            <p id="questions" class="accordion">5. Is my PC being stolen or lost included in the warranty? </p>
-            <div class="panel">
-              <p id="answers">• Unfortunately, we only accept PCs that have defects. Lost computers are not included in
-                the warranty. </p>
-            </div>
-            <p id="questions" class="accordion">6. Can I seek assistance to other repair services?</p>
-            <div class="panel">
-              <p id="answers">• Yes you can but the warranty will be voided.</p>
-            </div>
+            
           </div>
 
-          <button class="dropbtn btn1 pshort" onclick="showContentDelivery()">Delivery</button>
+          <button class="dropbtn btn1 pshort" onclick="showContentVaccination()">Vaccination</button>
           <div id="dropList2" class="content">
-            <p id="questions" class="accordion">1. If there are damaged products that were delivered, does this still
-              cover the warranty? </p>
+            <p id="questions" class="accordion">1. Is COVID-19 vaccine safe?</p>
             <div class="panel">
-              <p id="answers">• If you receive any damaged products, please contact us immediately so that we can issue a
-                replacement for the item.</p>
+              <p id="answers">•COVID-19 vaccines have been tested in large, randomized controlled trials that include 
+                people of a broad age range, both sexes, different ethnicities, and those with known medical conditions. The vaccines have shown a high level of efficacy across all populations. Vaccines have been found to 
+                be safe and effective in people with various underlying medical 
+                conditions that are associated with increased risk of severe disease. These include high blood pressure; diabetes; asthma; pulmonary, liver or kidney disease; 
+                and chronic infections that are stable and controlled.</p>
+                <p id="answers" class="ref">Source: <a href="https://www.who.int/news-room/feature-stories/detail/safety-of-covid-19-vaccines" target="_blank">WHO.int</a></p>
             </div>
-            <p id="questions" class="accordion">2. What do I do if I never received my order? </p>
+            <p id="questions" class="accordion">2. Can I choose what brand of Covid-19 vaccine will I get?</p>
             <div class="panel">
-              <p id="answers">• Kindly contact our page in order to track your delivery status</p>
+              <p id="answers">• Yes. All currently authorized and recommended COVID-19 vaccines are safe and effective, and CDC does not recommend one vaccine over another. 
+                The most important decision is to get a COVID-19 vaccination as soon as possible. 
+                Widespread vaccination is a critical tool to help stop the pandemic.</p>
+                <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">3. What will I do if I receive the wrong product? </p>
+            <p id="questions" class="accordion">3. How do vaccines differ with each other?</p>
             <div class="panel">
-              <p id="answers">• If that is the case, please kindly contact our page for assistance.</p>
+              <p id="answers">• Vaccines differ in their composition and how they trigger the immune response to create antibodies.</p>
+              <p id="answers" class="ref">Source: <a href="https://doh.gov.ph/faqs/vaccines" target="_blank">doh.gov.ph</a></p>
             </div>
-            <p id="questions" class="accordion">4. How long is the delivery time?</p>
+            <p id="questions" class="accordion">4. What are the possible side effects of the COVID-19 vaccines?</p>
             <div class="panel">
-              <p id="answers">• It would normally take 3-5 days but it can extend due to the availability of the products
-                and the volume of ordered products</p>
+              <p id="answers">• The possible side effects of a vaccine include pain, redness, itchiness or swelling at the injection site (which may last a few hours); fever; feeling of
+                 weakness or fatigue; headache; dizziness; diarrhea; or nausea.</p>
+                 <p id="answers" class="ref">Source: <a href="https://doh.gov.ph/faqs/vaccines" target="_blank">doh.gov.ph</a></p>
             </div>
-            <p id="questions" class="accordion">5. The delivery person mishandled my package, what should I do?</p>
+            <p id="questions" class="accordion">5. Can I purchase the vaccine or have the vaccination from private clinics or pharmacies?</p>
             <div class="panel">
-              <p id="answers">• Please contact us immediately with the delivery details specifically the delivery ID, the
-                name of the delivery person or his ID number.</p>
+              <p id="answers">• No, you cannot purchase COVID-19 vaccines from private clinics or pharmacies. At present, only the government is 
+                duly authorized to procure and administer vaccines.</p>
+                <p id="answers" class="ref">Source: <a href="https://doh.gov.ph/faqs/vaccines" target="_blank">doh.gov.ph</a></p>
             </div>
           </div>
 
           <button class="dropbtn pshort" onclick="showContentOthers()">Others</button>
           <div id="dropList3" class="content">
-            <p id="questions" class="accordion">1. Do you offer non technology related services? </p>
+            <p id="questions" class="accordion">1. Who are at higher risk for developing severe illness from COVID-19?</p>
             <div class="panel">
-              <p id="answers">• No, we prioritize computer related services only</p>
+              <p id="answers">• People at risk are older adults, pregnant or recently pregnant people and people of all ages
+                that have underlying medical conditions.
+              </p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">2. How can I comment or give feedback about an experience I had in the
-              customer service? </p>
+            <p id="questions" class="accordion">2. Can I get COVID-19 from my pets or other animals? </p>
             <div class="panel">
-              <p id="answers">• We always welcome your feedback about our service experience – whether you found it
-                friendly and helpful, or it fell short of your expectations.</p>
+              <p id="answers">• Based on the available information to date, the risk of animals spreading COVID-19 to people is considered to be low.
+                However, since animals can spread other diseases to people, it’s always a good idea to practice healthy habits around pets and other animals, 
+                such as washing your hands and maintaining good hygiene. 
+              </p>
+              <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
-            <p id="questions" class="accordion">3. Is there a return policy?</p>
+            <p id="questions" class="accordion">3. Can I get COVID-19 from food like restaurants take-out, canned goods, refrigerated foods
+              and other packed foods including water?
+            </p>
             <div class="panel">
-              <p id="answers">• There is no return policy. The product can only be replaced/renewed using the warranty if
-                it is broken. </p>
+              <p id="answers">• Currently there is no evidence that people can get COVID-19 by eating or handling food.
+                It may be possible that people can get COVID-19 by touching a surface or object, such as a food package or dining ware that has the virus on it and then touching their own mouth, nose, or possibly their eyes. However, 
+                this is not thought to be the main way the virus spreads.  </p>
+                <p id="answers" class="ref">Source: <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Symptoms-&-Emergency-Warning-Signs" target="_blank">CDC.gov</a></p>
             </div>
           </div>
             
@@ -136,20 +148,20 @@
 
 </body>
 <script>
-  function showContentSoftware() {
+  function showContentPrevention() {
     document.getElementById("dropList").classList.toggle("show");
     document.getElementById("dropList1").classList.remove("show");
     document.getElementById("dropList2").classList.remove("show");
     document.getElementById("dropList3").classList.remove("show");
   }
-  function showContentHardware() {
+  function showContentSymptoms() {
     document.getElementById("dropList1").classList.toggle("show");
     document.getElementById("dropList").classList.remove("show");
     document.getElementById("dropList2").classList.remove("show");
     document.getElementById("dropList3").classList.remove("show");
 
   }
-  function showContentDelivery() {
+  function showContentVaccination() {
     document.getElementById("dropList2").classList.toggle("show");
     document.getElementById("dropList1").classList.remove("show");
     document.getElementById("dropList").classList.remove("show");

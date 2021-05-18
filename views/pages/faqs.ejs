@@ -12,17 +12,16 @@
 </head>
 
 <body>
+  
   <div id="header">
     <h2>Web Clinic</h2>
   </div>
   <%- include('../partials/navlinks'); -%>
-
-
+  <div>
+    <img src="../images/bgFaqs.png" class="img-fluid" width="100%" height="auto">
+  </div>
+  
     <div class="container">
-      <div>
-        <img src="../images/FAQS.jpg" alt="TechSupport" class="center">
-      </div>
-
       <div id="faq-view">
         <div id="faqs">
           <button class="dropbtn pshort" onclick="showContentPrevention()">Prevention</button>
@@ -148,6 +147,7 @@
 
 </body>
 <script>
+  document.getElementById("dropList").classList.toggle("show");
   function showContentPrevention() {
     document.getElementById("dropList").classList.toggle("show");
     document.getElementById("dropList1").classList.remove("show");

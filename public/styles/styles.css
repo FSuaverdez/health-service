@@ -429,3 +429,15 @@ button {
   color: white;
   text-decoration: underline;
 }
+#checkbox{
+  margin-top: 10px;
+  color: #333;
+}
+#terms{
+  color: #e33e25;
+  text-decoration: underline;
+}
+#agreement{
+  height: 17px;
+  width: 17px;
+}

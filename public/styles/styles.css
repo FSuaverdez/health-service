@@ -435,7 +435,7 @@ button {
 }
 #terms{
   color: #e33e25;
-  text-decoration: underline;
+  cursor: pointer;
 }
 #agreement{
   height: 17px;

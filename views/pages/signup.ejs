@@ -37,7 +37,7 @@
           <div>
             <div>Gender</div>
             <select name="gender" class="input" required>
-              <option disabled selected hidden>Choose gender</option>
+              <option disabled selected hidden value="0">Choose gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Others">Others</option>
@@ -51,17 +51,23 @@
           </div>
           <div>
             <div>Province:</div>
-            <select required class="input" name="province" id="province"></select>
+            <select required class="input" name="province" id="province">
+              <option disabled selected hidden value="0">Choose Province:</option>
+            </select>
             <div class="province error"></div>
           </div>
           <div>
             <div>City:</div>
-            <select required class="input" name="city" id="city"></select>
+            <select required class="input" name="city" id="city">
+              <option disabled selected hidden value="0">Choose City:</option>
+            </select>
             <div class="city error"></div>
           </div>
           <div>
             <div>Barangay:</div>
-            <select required class="input" name="barangay" id="barangay"></select>
+            <select required class="input" name="barangay" id="barangay">
+              <option disabled selected hidden value="0">Choose Barangay:</option>
+            </select>
             <div class="barangay error"></div>
           </div>
           <div>
@@ -181,6 +187,7 @@
       const provinceError = document.querySelector('.province.error')
       const cityError = document.querySelector('.city.error')
       const barangayError = document.querySelector('.barangay.error')
+      const genderError = document.querySelector('.gender.error')
 
 
       passwordError.textContent = ""
@@ -188,6 +195,7 @@
       provinceError.textContent = ""
       cityError.textContent = ""
       barangayError.textContent = ""
+      genderError.textContent = ""
       // Get Values
       const firstName = form.firstName.value
       const lastName = form.lastName.value
@@ -225,6 +233,11 @@
       if (form.barangay.value == 0) {
 
         barangayError.textContent = "Please select a Barangay"
+        return
+      }
+      if (form.gender.value == 0) {
+
+        genderError.textContent = "Please select your Gender"
         return
       }
 

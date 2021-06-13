@@ -112,14 +112,6 @@
               </span></h6>
           </div>
           <div>
-            <% function getAge(dateString) { var today=new Date(); var birthDate=new Date(dateString); var
-              age=today.getFullYear() - birthDate.getFullYear(); var m=today.getMonth() - birthDate.getMonth(); if (m <
-              0 || (m===0 && today.getDate() < birthDate.getDate())) { age--; } return age; } %>
-              <h6>Age: <span class="info">
-                  <%= getAge(sender.birthday) %>
-                </span></h6>
-          </div>
-          <div>
             <h6>Gender: <span class="info">
                 <%= sender.gender %>
               </span></h6>
